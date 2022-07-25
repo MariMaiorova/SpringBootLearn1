@@ -12,6 +12,7 @@ public class GreetingController {
         model.addAttribute("name", "Greeting Page");
         model.addAttribute("title", "Wilkommen!");
         return "greeting";
+        //test
     }
 
 }

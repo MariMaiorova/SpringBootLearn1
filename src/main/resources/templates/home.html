@@ -7,15 +7,7 @@
 </head>
 <body>
 
-<div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
-    <span class="fs-4">Blog</span>
-    <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Home</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Blog</a>
-        <a class="me-3 py-2 text-dark text-decoration-none" href="#">Support</a>
-        <a class="py-2 text-dark text-decoration-none" href="#">Pricing</a>
-    </nav>
-</div>
+<div th:insert = "blogs/header:: header" > </div>
 
 <main>
 
@@ -189,17 +181,7 @@
 </main>
 
 
-<footer class="text-muted py-5">
-    <div class="container">
-        <p class="float-end mb-1">
-            <a href="#">Back to top</a>
-        </p>
-        <p class="mb-1">Album example is © Bootstrap, but please download and customize it for yourself!</p>
-        <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="/docs/5.2/getting-started/introduction/">getting started guide</a>.</p>
-    </div>
-</footer>
-
-</div>
+<div th:insert = "blogs/footer:: footer" > </div>
     <p th:text = "'This is ' + ${title} +' !'" ></p>
 
 </body>
